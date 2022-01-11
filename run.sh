@@ -35,7 +35,6 @@ fetch-github-registration-token() {
 }
 
 reg_token=$(fetch-github-registration-token $username)
-echo $reg_token
 
 docker run -it \
   -e REPO_URL="${repo_url}" \
